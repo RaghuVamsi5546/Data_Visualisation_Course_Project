@@ -35,7 +35,7 @@ df_filtered = df[(df["Country"].isin(countries)) & (df["Year"] >= year_range[0])
 # Guide image
 with st.sidebar.expander("Guide Image to Feature Relationships", expanded=False):
     st.write("This image explains the relationship between two key features to help you interpret the graphs more effectively.")
-    guide_image = Image.open("phase1_output.png")
+    guide_image = Image.open("images/phase1_output.png")  # Make sure the image is in the "images" folder or specify the correct path
     st.image(guide_image, caption="Guide to Feature Relationships", use_column_width=True)
 
 # Check if the filtered data is empty
